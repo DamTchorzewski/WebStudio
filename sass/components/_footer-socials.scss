@@ -1,0 +1,33 @@
+.footer-socials {
+    margin-right: auto;
+    display: inline-flex;
+    flex-direction: column;
+    &__title {
+      @extend %mb-20;
+    }
+  }
+  
+  .footer-social-list {
+    @extend %list;
+    display: flex;
+    gap: 10px;
+    &__link {
+      display: flex;
+      width: 44px;
+      height: 44px;
+      background-color: $shadows-2;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      transition: background-color $transition-duration $cubic-bezier;
+      will-change: background-color;
+      &:hover,
+      &:focus {
+        background-color: $blue;
+      }
+    }
+    &__icon {
+      width: 20px;
+      height: 20px;
+    }
+  }

@@ -1,0 +1,12 @@
+%button {
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  @mixin button-typeface($f-weight, $l-height, $l-spacing) {
+    font-weight: $f-weight;
+    line-height: $l-height;
+    letter-spacing: $l-spacing;
+  }

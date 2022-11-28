@@ -1,0 +1,40 @@
+.footer {
+    background-color: $bg-grey-dark;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .footer-container {
+    @extend %container;
+    @extend %flex-baseline;
+  }
+  .footer-left-block {
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-contact {
+    font-size: 14px;
+    font-style: inherit;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $shadows-2;
+  }
+  
+  .footer-contact-list {
+    @extend %list;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    &__address {
+      color: $white;
+    }
+    &__mail,
+    &__phone {
+      @extend %link-grey;
+    }
+  }

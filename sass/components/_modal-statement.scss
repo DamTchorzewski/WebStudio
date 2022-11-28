@@ -1,0 +1,41 @@
+.statement {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: $grey;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    &__label {
+      position: relative;
+    }
+    &__input {
+      position: absolute;
+      visibility: hidden;
+       &:checked + svg {
+         visibility: hidden;
+      }
+      & ~ svg:nth-of-type(2) {
+        visibility: hidden;
+      }
+      &:checked ~ svg:nth-of-type(2) {
+        visibility: visible;
+      }
+    }
+    &__link,
+    &__link:hover {
+      color: $blue;
+    }
+    &__checkbox {
+      position: absolute;
+      width: 16px;
+      height: 15px;
+      top: 3px;
+      user-select: none;
+      visibility: hidden;
+    }
+    &__text {
+      margin-left: 9px;
+    }
+  }

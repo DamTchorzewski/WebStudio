@@ -1,0 +1,103 @@
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+%link {
+  text-decoration: none;
+  color: $black-title;
+  transition: color $transition-duration $cubic-bezier;
+  will-change: color;
+  &:visited {
+    @extend %link;
+  }
+  &:hover,
+  &:focus {
+    @extend %link;
+    color: $blue;
+    fill: $blue;
+  }
+  &-grey {
+    @extend %link;
+    color: $grey;
+    fill: $grey;
+    transition: color $transition-duration $cubic-bezier,
+      fill $transition-duration $cubic-bezier;
+    will-change: color, fill;
+    &:hover,
+    &:focus {
+      color: $blue;
+      fill: $blue;
+    }
+  }
+}
+
+%flex-c-g10 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+%flex-baseline {
+  display: flex;
+  align-items: baseline;
+}
+
+%container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+%list {
+  list-style-type: none;
+  display: flex;
+}
+
+%active-page {
+  text-decoration: none;
+  color: $blue;
+  fill: $blue;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $blue;
+    border-radius: 2px;
+  }
+}
+
+%mb-20 {
+  margin-bottom: 20px;
+}
+
+%header2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.is-hidden {
+  transform: scale(0);
+}

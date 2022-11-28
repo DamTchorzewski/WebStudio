@@ -1,0 +1,66 @@
+.portfolio-products {
+    @extend %container;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-product {
+    margin: 0;
+    border-bottom: 1px solid $border-card;
+    flex-basis: 370px;
+    transition: box-shadow $transition-duration $cubic-bezier;
+    will-change: box-shadow;
+
+    &__image {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__overlay {
+        padding: 49px 45px 49px 24px;
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.03em;
+        color: $white;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: $shadows-3;
+        transition: transform $transition-duration $cubic-bezier;
+        transform: translateY(0);
+        will-change: transform;
+    }
+
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+
+        & .portfolio-product__overlay {
+            transform: translateY(-100%);
+        }
+    }
+
+    &__name {
+        padding-left: 24px;
+        padding-top: 20px;
+        margin: 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+    }
+
+    &__category {
+        padding-left: 24px;
+        padding-top: 4px;
+        padding-bottom: 20px;
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.03em;
+        color: $grey;
+    }
+}

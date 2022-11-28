@@ -1,0 +1,94 @@
+.main-bottom {
+  background-color: $bg-grey;
+}
+
+.our-team {
+  @extend %section;
+  @extend %container;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  &__title {
+    @extend %header2;
+  }
+}
+
+.our-team-cards {
+  @extend %list;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.our-team-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: $white;
+  border-radius: 0px 0px 4px 4px;
+
+  &__photo {
+    margin: 0;
+  }
+
+  &__name {
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &__position {
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $grey;
+  }
+
+  &__socials {
+    @extend %list;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background-color: $white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill: $border-btn;
+    transition: background-color $transition-duration $cubic-bezier,
+      fill $transition-duration $cubic-bezier;
+    will-change: background-color, fill;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $blue;
+      fill: $white;
+    }
+  }
+
+  &__social-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

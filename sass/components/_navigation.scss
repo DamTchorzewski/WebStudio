@@ -1,0 +1,45 @@
+.navigation {
+    margin-left: 93px;
+  }
+  
+  .main-navigation {
+    @extend %list;
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    &__item {
+      @extend %link;
+      &--active {
+        @extend %active-page;
+      }
+    }
+  }
+  
+  .header-contact {
+    @extend %list;
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+    &__item {
+      @extend %link-grey;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &__icon {
+      width: 16px;
+      height: 12px;
+      &--right {
+        width: 10px;
+        height: 16px;
+      }
+    }
+  }

@@ -1,0 +1,48 @@
+.our-skills {
+  @extend %container;
+}
+
+.our-skills-cards {
+  @extend %list;
+  @extend %container;
+  padding-top: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 0;
+  display: flex;
+  column-gap: 30px;
+}
+
+.our-skills-card {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.our-skills-card__icon {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: $bg-grey;
+  border-radius: 4px;
+}
+
+.our-skills-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.our-skills-card__title {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.our-skills-card__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $grey;
+}

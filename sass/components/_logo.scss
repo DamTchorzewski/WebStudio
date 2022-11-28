@@ -1,0 +1,51 @@
+.logo-black {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    display: flex;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $black-title;
+    text-decoration: none;
+    
+      transition: color $transition-duration $cubic-bezier;
+      will-change: color;
+  
+    .logo-blue {color:$blue;}
+    
+    &:hover,
+    &:focus{
+        color: $blue}
+    }
+
+.logo-white {
+  padding-top: 24px;
+    padding-bottom: 25px;
+    display: flex;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $white;
+    text-decoration: none;transition: color $transition-duration $cubic-bezier;
+      will-change: color;
+    .logo--blue {
+        color: $blue;
+      }
+    
+      &:hover,
+      &:focus {
+        color: $blue
+      }
+    }
+  
+
+  
+
+  
+    
+    
+  

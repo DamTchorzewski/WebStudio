@@ -1,0 +1,40 @@
+.our-clients {
+  @extend %section;
+  @extend %container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  &__title {
+    @extend %header2;
+  }
+}
+
+.our-clients-cards {
+  @extend %list;
+  display: flex;
+  gap: 30px;
+
+  &__link {
+    display: flex;
+    padding: 16px 32px;
+    border: 1px solid $border-btn;
+    border-radius: 4px;
+    fill: $border-btn;
+    transition: border-color $transition-duration $cubic-bezier,
+      fill $transition-duration $cubic-bezier;
+    will-change: border-color, fill;
+
+    &:hover,
+    &:focus {
+      border-color: $blue;
+      fill: $blue;
+    }
+  }
+
+  &__icon {
+    width: 106px;
+    height: 60px;
+  }
+}
