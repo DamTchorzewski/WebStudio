@@ -41,14 +41,14 @@
       height: 18px;
     }
   
-    *__header {
-      margin-top: 0;
-      margin-bottom: 12px;
+    &__header {
+      margin: 0px 30px 12px 30px;
       font-weight: 700;
       font-size: 20px;
       line-height: 1.15;
       text-align: center;
       letter-spacing: 0.03em;
+    
     }
   }
   
