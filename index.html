@@ -22,37 +22,37 @@
 
   <!-- ========== HEADER_STUDIO ========= -->
 
-  <header>
-    <div class="header">
+  <header class="header-underline">
+    <div class="header container">
       <div class="menu">
-        <a class="logo-black" href="./index.html">
-          <span class="logo-blue">Web</span>Studio
+        <a class="logo" href="./index.html">Web
+          <span class="logo--black">Studio</span>
           </a>
         <nav class="navigation">
-          <ul class="main-navigation">
+          <ul class="main-navigation list">
             <li>
-              <a class="main-navigation__item--active" href="./index.html">Agencja </a>
+              <a class="main-navigation__item--active active-page link" href="./index.html">Agencja </a>
             </li>
             <li>
-              <a class="main-navigation__item" href="./portfolio.html"> Portfolio </a>
+              <a class="main-navigation__item link" href="./portfolio.html"> Portfolio </a>
             </li>
             <li>
-              <a class="main-navigation__item" href="#"> Kontakt </a>
+              <a class="main-navigation__item link" href="#"> Kontakt </a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contact">
+        <ul class="header-contact list">
           <li>
-            <a class="header-contact__item" href="mailto:info@devstudio.com">
-              <svg class="header-contact__icon" width="20" height="16">
+            <a class="header-contact__item link-grey" href="mailto:info@devstudio.com">
+              <svg class="header-contact__icon">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li>
-            <a class="header-contact__item" href="tel:+48111111111">
-              <svg class="header-contact__icon" width="16" height="20">
+            <a class="header-contact__item link-grey" href="tel:+48111111111">
+              <svg class="header-contact__icon--phone">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               +48 111 111 111</a>
@@ -71,7 +71,7 @@
   <main>
     <section class="main-baner">
       <h1 class="main-baner__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-      <button class="main-baner__button" type="button" data-modal-open>Zamów usługę</button>
+      <button class="main-baner__button button" type="button" data-modal-open>Zamów usługę</button>
 
     
     <!-- ========== FORM_ORDER ========= -->
@@ -159,8 +159,8 @@
     <!-- ========== OUR_SKILLS ========= -->
 
     <section>
-      <div class="our-skills">
-        <ul class="our-skills-cards">
+      <div class="our-skills container">
+        <ul class="our-skills-cards list">
           <li class="our-skills-card">
             <div class="our-skills-card__icon">
             <svg width="70" height="70">
@@ -217,11 +217,18 @@
     <!-- ========== WHAT_WE_DO ========= -->
 
     
-      <div class="what-we-do">
+      <div class="what-we-do container section">
         <h2 class="what-we-do__title">Czym się zajmujemy</h2>
         <ul class="what-we-do-cards">
           <li class="what-we-do-card">
-            <img src="images/zdj1.jpg" alt="programowanie" width="370" height="294">
+            <img src="./images/coding@x1.jpg"
+            srcset="./images/coding@x1.jpg 370w,
+            ./images/coding@x2.jpg 740w,
+            ./images/coding@x3.jpg 1110w" 
+
+             sizes="(min-width: 1200px) 370px"
+             alt="programowanie"/>
+
             <h4 class="what-we-do-card__label">Aplikacje komputerowe</h4>
           </li>
           <li class="what-we-do-card">
@@ -244,11 +251,21 @@
 
     <section class="main-bottom section">
       <div class="our-team container">
-        <h2 class="our-team__title">Nasz zespół</h2>
+        <h2 class="our-team__title header2">Nasz zespół</h2>
         <ul class="our-team-cards list">
           <li class="our-team-card">
             <figure class="our-team-card__photo">
-              <img src="images/card1.jpg" alt="men1" width="270" height="260"/>
+              <img class="our-team-cards__img" src="images/card1.jpg" alt="men1" 
+              srcset=" 
+              images/product_designer_mobile@1x.jpg   450w,
+                    ./images/product_designer_mobile@2x.jpg   900w,
+                    ./images/product_designer_mobile@3x.jpg  1350w,
+                    ./images/product_designer_tablet@1x.jpg   354w,
+                    ./images/product_designer_tablet@2x.jpg   708w,
+                    ./images/product_designer_tablet@3x.jpg  1062w,
+                    ./images/product_designer_desktop@1x.jpg  270w,
+                    ./images/product_designer_desktop@2x.jpg  540w,
+                    ./images/product_designer_desktop@3x.jpg  810w"/>
               <figcaption>
                 <h3 class="our-team-card__name">John Doe</h3>
                 <p class="our-team-card__position">Product Designer</p>
@@ -292,7 +309,7 @@
 
 <li class="our-team-card">
             <figure class="our-team-card__photo">
-              <img
+              <img class="our-team-cards__img"
               src="images/card2.jpg" alt="women1" width="270" height="260" />
               <figcaption>
                 <h3 class="our-team-card__name">John Doe</h3>
@@ -341,7 +358,7 @@
           </li>
           <li class="our-team-card">
             <figure class="our-team-card__photo">
-              <img
+              <img class="our-team-cards__img"
               src="images/card3.jpg" alt="men2" width="270" height="260" />
               <figcaption>
                 <h3 class="our-team-card__name">John Doe</h3>
@@ -390,7 +407,7 @@
           </li>
           <li class="our-team-card">
             <figure class="our-team-card__photo">
-              <img
+              <img class="our-team-cards__img"
               src="images/card4.jpg" alt="men3" width="270" height="260" />
               <figcaption>
                 <h3 class="our-team-card__name">John Doe</h3>
@@ -447,46 +464,46 @@
 
     <!-- ========== OUR_CLIENTS ========= -->
 
-    <section>
-      <div class="our-clients">
-        <h2 class="our-clients__title">Nasi klienci</h2>
-        <ul class="our-clients-cards">
-          <li>
+    <section class="section">
+      <div class="our-clients container">
+        <h2 class="our-clients__title header2">Nasi klienci</h2>
+        <ul class="our-clients-cards list">
+          <li class="our-clients-cards__item">
             <a href="#" class="our-clients-cards__link">
               <svg class="our-clients-cards__icon">
                 <use href="./images/icons.svg#icon-client1"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="our-clients-cards__item">
             <a href="#" class="our-clients-cards__link">
               <svg class="our-clients-cards__icon">
                 <use href="./images/icons.svg#icon-client2"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="our-clients-cards__item">
             <a href="#" class="our-clients-cards__link">
               <svg class="our-clients-cards__icon">
                 <use href="./images/icons.svg#icon-client3"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="our-clients-cards__item">
             <a href="#" class="our-clients-cards__link">
               <svg class="our-clients-cards__icon">
                 <use href="./images/icons.svg#icon-client4"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="our-clients-cards__item">
             <a href="#" class="our-clients-cards__link">
               <svg class="our-clients-cards__icon">
                 <use href="./images/icons.svg#icon-client5"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="our-clients-cards__item">
             <a href="#" class="our-clients-cards__link">
               <svg class="our-clients-cards__icon">
                 <use href="./images/icons.svg#icon-client6"></use>
@@ -501,19 +518,19 @@
   <!-- ========== Footer ========= -->
 
   <footer class="footer">
-    <section class="footer-container">
+    <section class="footer-container container">
       <div class="footer-left-block">
-        <a class="logo-white" href="#"><span class="logo--blue">Web</span>Studio</a>
+        <a class="logo-footer" href="#">Web<span class="logo--white">Studio</span></a>
         <address class="footer-contact">
-          <ul class="footer-contact-list">
+          <ul class="footer-contact-list list">
             <li class="footer-contact-list__address">
               m. Warszawa, Aleje Jerozolimskie 21
             </li>
             <li>
-              <a class="footer-contact-list__mail" href="mailto:info@example.com">info@example.com</a>
+              <a class="footer-contact-list__mail link-grey" href="mailto:info@example.com">info@example.com</a>
             </li>
             <li>
-              <a class="footer-contact-list__phone" href="tel:+48111111111">+48 111 111 111</a>
+              <a class="footer-contact-list__phone link-grey" href="tel:+48111111111">+48 111 111 111</a>
             </li>
           </ul>
         </address>
@@ -523,7 +540,7 @@
   
       <div class="footer-socials">
         <h4 class="footer-socials__title">Dołącz do nas</h4>
-        <ul class="footer-social-list">
+        <ul class="footer-social-list list">
           <li>
             <a href="#" class="footer-social-list__link">
               <svg class="footer-social-list__icon">
@@ -576,7 +593,59 @@
       </div>
     </section>
   </footer>
-  <script src="./js/modal.js"></script>
-  </body>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <path fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    
+      <div class="mobile-menu">
+        <ul class="mobile-menu__list-nav">
+          <li class="mobile-menu__list-item">
+            <a class="link" href="./index.html" class="link">Agencja</a>
+          </li>
+          <li class="mobile-menu__list-item">
+            <a class="link" href="./portfolio.html" class="link">Portfolio</a>
+          </li>
+          <li class="mobile-menu__list-item">
+            <a class="link" href="#" class="link">Kontakt</a>
+          </li>
+        </ul>
+    
+        <ul class="mobile-menu__list-contacts">
+          <li class="mobile-menu__list-contacts--phone">
+            <a class="link-blue" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
+          <li class="mobile-menu__list-contacts--mail">
+            <a class="link-grey" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+    
+        <ul class="mobile-menu__list-socials list">
+          <li class="mobile-menu__list-socials-item">
+            <a class="link-blue" href="#">Instagram</a>
+          </li>
+          <li class="mobile-menu__list-socials-item link-blue">
+            <a class="link-blue" href="#">Twitter</a>
+          </li>
+          <li class="mobile-menu__list-socials-item link-blue">
+            <a class="link-blue" href="#">Facebook</a>
+          </li>
+          <li class="mobile-menu__list-socials-item link-blue">
+            <a class="link-blue" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-</html>
+   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+   <script defer src="./js/mobile-menu.js"></script>
+   <script src="./js/modal.js"></script>
+   </body>
+  
+   </html>

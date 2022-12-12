@@ -5,14 +5,34 @@
   }
   
   .footer-container {
-    @extend %container;
-    @extend %flex-baseline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and(min-width:$tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 144px;
+      align-items: flex-start;
+    }
+         @media screen and(min-width:$desktop) {
+           flex-wrap: nowrap;
+           justify-content: flex-start;
+           gap: 0;
+           align-items: baseline;
   }
+}
+
   .footer-left-block {
-    margin-right: 70px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+    @media screen and(min-width:$desktop) {
+      align-items: flex-start;
+      margin-right: 70px;
+      
+    }
   }
   
   .footer-contact {
@@ -21,20 +41,31 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $shadows-2;
+    margin-bottom: 60px;
+    @media screen and (min-width:$desktop) {
+      margin-bottom: 0;
+      width: 246px;
+      
+    }
   }
   
   .footer-contact-list {
-    @extend %list;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 8px;
+    align-items: center;
+    @media screen and(min-width: $desktop) {
+      gap: 9px;
+      align-items: flex-start;
+    }
+    
     &__address {
       color: $white;
     }
     &__mail,
     &__phone {
-      @extend %link-grey;
+      color: $shadows-1;
     }
   }

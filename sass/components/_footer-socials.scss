@@ -1,14 +1,23 @@
 .footer-socials {
-    margin-right: auto;
+
     display: inline-flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    @media screen and(min-width: $tablet) {
+      padding-top: 5px;}
+    @media screen and(min-width: $desktop){
+      align-items: flex-start;
+      margin-right: 78px;
+    }
+    
     &__title {
-      @extend %mb-20;
+      margin-bottom: 20px;
     }
   }
   
   .footer-social-list {
-    @extend %list;
+  
     display: flex;
     gap: 10px;
     &__link {

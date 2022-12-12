@@ -1,45 +1,83 @@
 .navigation {
-    margin-left: 93px;
+    display: none;
+
+    @media screen and(min-width: $tablet) {
+      display: block;
+      
+    }
   }
   
   .main-navigation {
-    @extend %list;
+    
     list-style-type: none;
     display: flex;
-    gap: 50px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    &__item {
-      @extend %link;
-      &--active {
-        @extend %active-page;
-      }
+    gap: 60px;
+    @media screen and(min-width: $desktop){
+        gap: 50px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1.14;
+          letter-spacing: 0.02em;
     }
+  }
+  .main-navigation__item {
+     
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        &--active
+        {
+@extend .active-page;
+        }
   }
   
   .header-contact {
-    @extend %list;
-    display: flex;
-    gap: 30px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    margin-left: auto;
-    &__item {
-      @extend %link-grey;
+    display: none;
+    @media screen and(min-width: $tablet) {
       display: flex;
-      align-items: center;
-      gap: 10px;
+        flex-direction: column;
+        gap: 10px;
+        padding-block: 21px;
+        font-weight: 500;
     }
-    &__icon {
-      width: 16px;
-      height: 12px;
-      &--right {
-        width: 10px;
-        height: 16px;
-      }
+    @media screen and(min-width: $desktop) {
+        display: flex;
+          flex-direction: row;
+          gap: 30px;
+          font-size: 14px;
+          line-height: 1.14;
+          letter-spacing: 0.02em;
+          padding-block: 32px;
     }
   }
+
+    .header-contact__item {
+      display: flex;
+        align-items: center;
+        gap: 10px;
+      
+        @media screen and (max-width: 1199px) {
+          font-size: 12px;
+          line-height: 1.17;
+          letter-spacing: 0.02em;
+          gap: 8px;
+        }
+      }
+    .header-contact__icon {
+      @media screen and (min-width: $tablet) {
+        width: 14px;
+        height: 10px;
+  
+        &--phone {
+          width: 10px;
+          height: 14px;
+        }
+      }
+  
+      @media screen and (min-width: $desktop) {
+        width: 16px;
+        height: 12px;
+  
+        &--phone {
+          width: 10px;
+          height: 16px;
+        }}}

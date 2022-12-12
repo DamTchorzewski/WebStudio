@@ -1,40 +1,56 @@
 .our-clients {
-  @extend %section;
-  @extend %container;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 
-  &__title {
-    @extend %header2;
+  @media screen and (min-width: $desktop) {
+    gap: 50px;
   }
 }
 
 .our-clients-cards {
-  @extend %list;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 
-  &__link {
-    display: flex;
-    padding: 16px 32px;
-    border: 1px solid $border-btn;
-    border-radius: 4px;
-    fill: $border-btn;
-    transition: border-color $transition-duration $cubic-bezier,
-      fill $transition-duration $cubic-bezier;
-    will-change: border-color, fill;
-
-    &:hover,
-    &:focus {
-      border-color: $blue;
-      fill: $blue;
-    }
-  }
-
-  &__icon {
-    width: 106px;
-    height: 60px;
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
   }
 }
+
+.our-clients-cards__item {
+  max-width: 210px;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 226px;
+  }
+}
+
+.our-clients-cards__link {
+  display: flex;
+  border: 1px solid $border-btn;
+  padding-block: 16px;
+  border-radius: 4px;
+  justify-content: center;
+  fill: $border-btn;
+  transition: border-color $transition-duration $cubic-bezier,
+    fill $transition-duration $cubic-bezier;
+  will-change: border-color, fill;
+
+  &:hover,
+  &:focus {
+    border-color: $blue;
+    fill: $blue;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 16px 32px;
+  }
+}
+
+.our-clients-cards__icon {
+  width: 106px;
+  height: 60px;}

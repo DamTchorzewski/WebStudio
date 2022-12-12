@@ -13,22 +13,23 @@ ul {
   padding: 0;
 }
 
-%link {
+.link {
   text-decoration: none;
   color: $black-title;
   transition: color $transition-duration $cubic-bezier;
   will-change: color;
   &:visited {
-    @extend %link;
+    @extend .link;
   }
   &:hover,
   &:focus {
-    @extend %link;
+    @extend .link;
     color: $blue;
     fill: $blue;
   }
-  &-grey {
-    @extend %link;
+}
+  .link-grey {
+    @extend .link;
     color: $grey;
     fill: $grey;
     transition: color $transition-duration $cubic-bezier,
@@ -40,7 +41,17 @@ ul {
       fill: $blue;
     }
   }
-}
+  .link-blue {
+    text-decoration: none;
+    color: $blue;
+    &:hover,
+    &:focus,
+    &:visited
+    { 
+      color: $blue;
+    }
+  }
+
 
 %flex-c-g10 {
   display: flex;
@@ -48,28 +59,50 @@ ul {
   gap: 10px;
 }
 
-%flex-baseline {
-  display: flex;
-  align-items: baseline;
-}
 
-%container {
-  width: 1200px;
+.container {
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  
+  @media screen and (min-width: $mobile) {
+    max-width: 480px;
+  }
+@media screen and (min-width:$tablet) {
+  max-width: 768px;
 }
+@media screen and (min-width:$desktop) {
+  max-width: 1200px;
+}
+}
+%container
+{
+width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+}
+.section {
+  padding-block: 60px;
 
-%section {
+  @media screen and (min-width: $desktop){
+    padding-block: 94px;
+  }
+}
+%section{
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+.list {
+  list-style-type: none;
+  display: flex; 
+  text-decoration: none;
+}
 %list {
   list-style-type: none;
   display: flex;
+ 
 }
-
-%active-page {
+.active-page {
   text-decoration: none;
   color: $blue;
   fill: $blue;
@@ -83,20 +116,34 @@ ul {
     height: 4px;
     background-color: $blue;
     border-radius: 2px;
+    @media screen and (min-width: $desktop){
+      top: 46px;
+    }
+   }
+}
+
+
+.header2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  
+  @media screen and(min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.17;
+    
   }
 }
-
-%mb-20 {
-  margin-bottom: 20px;
-}
-
 %header2 {
   margin: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-}
+  }
+  
 
 .is-hidden {
   transform: scale(0);

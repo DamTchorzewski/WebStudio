@@ -7,12 +7,18 @@
     color: $grey;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    @media screen and(min-width: $desktop) {
+      font-size:14px;
+      line-height: 1.71;
+      padding-left: 15px;
+      
+    }
     &__label {
       position: relative;
     }
     &__input {
       position: absolute;
-      visibility: hidden;
+     
        &:checked + svg {
          visibility: hidden;
       }
@@ -34,8 +40,13 @@
       top: 3px;
       user-select: none;
       visibility: hidden;
+      top: -1px;
+      @media screen and(min-width: $desktop) {
+        top: 3px;
+        
+      }
     }
     &__text {
-      margin-left: 9px;
+      margin-left: 24px;
     }
   }

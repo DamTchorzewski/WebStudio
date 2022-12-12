@@ -1,51 +1,41 @@
-.logo-black {
+.logo {
+  display: flex;
+  text-decoration: none;
+  color: $blue;
+  font-family: "Raleway";
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: $desktop) {
     padding-top: 24px;
     padding-bottom: 25px;
-    display: flex;
-    font-family: "Raleway";
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: $black-title;
-    text-decoration: none;
-    
-      transition: color $transition-duration $cubic-bezier;
-      will-change: color;
-  
-    .logo-blue {color:$blue;}
-    
-    &:hover,
-    &:focus{
-        color: $blue}
-    }
+  }
 
-.logo-white {
-  padding-top: 24px;
-    padding-bottom: 25px;
-    display: flex;
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+  &--black {
+    color: $black;
+  }
+
+  &--white {
     color: $white;
-    text-decoration: none;transition: color $transition-duration $cubic-bezier;
-      will-change: color;
-    .logo--blue {
-        color: $blue;
-      }
-    
-      &:hover,
-      &:focus {
-        color: $blue
-      }
-    }
-  
+  }
+}
 
-  
-
-  
-    
-    
-  
+.logo-footer {
+  display: flex;
+  text-decoration: none;
+  color: $blue;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+}

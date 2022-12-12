@@ -1,13 +1,11 @@
 .portfolio-filters {
-  @extend %list;
   padding-top: 94px;
   padding-bottom: 50px;
   display: flex;
   justify-content: center;
   gap: 8px;
 
-  &__button {
-    @extend %button;
+.portfolio-filters__button{
     @include button-typeface(500, 1.625, 0.03em);
     padding: 6px 22px;
     text-align: center;
