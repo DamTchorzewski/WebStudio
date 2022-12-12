@@ -1,11 +1,10 @@
 @import "./utils/variables";
-
-@import "./utils/global";
 @import "./components/body";
+@import "./utils/global";
+@import "./components/mobile-menu";
 @import "./components/buttons";
 @import "./components/header";
 @import "./components/menu";
-@import "./components/mobile-menu";
 @import "./components/logo";
 @import "./components/navigation";
 @import "./components/main-baner";

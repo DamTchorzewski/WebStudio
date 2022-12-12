@@ -2,31 +2,32 @@
   color: $white;
   height: 400px;
   padding: 118px 0;
-  background-image: linear-gradient($main-image-linear-gradient,
+  background-image: linear-gradient(
+    $main-image-linear-gradient,
       $main-image-linear-gradient ),
-    url(../images/baner_background_mobile@1x.jpg);
+    url(../../images/baner_background_mobile@1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 767px;
-
+ max-width: 767px;
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-    .main-top {
+    
+    .main-baner {
       background-image: linear-gradient($main-image-linear-gradient,
           $main-image-linear-gradient ),
-        url(../images/baner_background_mobile@2x.jpg);
+        url(../../images/baner_background_mobile@2x.jpg);
     }
   }
 
   @media screen and (min-device-pixel-ratio: 3),
   screen and (min-resolution: 288dpi),
   screen and (min-resolution: 3dppx) {
-    .main-top {
+    .main-baner {
       background-image: linear-gradient($main-image-linear-gradient,
           $main-image-linear-gradient ),
-        url(../images/baner_background_mobile@3x.jpg);
+        url(../../images/baner_background_mobile@3x.jpg);
     }
   }
 
@@ -34,7 +35,7 @@
     max-width: 1199px;
     background-image: linear-gradient($main-image-linear-gradient,
         $main-image-linear-gradient ),
-      url(../images/baner_background_tablet@1x.jpg);
+      url(../../images/baner_background_tablet@1x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,20 +43,20 @@
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-      .main-top {
+      .main-baner {
         background-image: linear-gradient($main-image-linear-gradient,
             $main-image-linear-gradient ),
-          url(../images/baner_background_tablet@2x.jpg);
+          url(../../images/baner_background_tablet@2x.jpg);
       }
     }
 
     @media screen and (min-device-pixel-ratio: 3),
     screen and (min-resolution: 288dpi),
     screen and (min-resolution: 3dppx) {
-      .main-top {
+      .main-baner {
         background-image: linear-gradient($main-image-linear-gradient,
             $main-image-linear-gradient ),
-          url(../images/baner_background_tablet@3x.jpg);
+          url(../../images/baner_background_tablet@3x.jpg);
       }
     }
   }
@@ -64,8 +65,9 @@
     padding: 200px 0;
     background-image: linear-gradient($main-image-linear-gradient,
         $main-image-linear-gradient ),
-      url(../images/baner_background_desktop@1x.jpg);
+      url(../../images/baner_background_desktop@1x.jpg);
     max-width: 1600px;
+    
     height: 600px;
     margin: 0 auto;
 
@@ -73,10 +75,10 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      .main-top {
+      .main-baner {
         background-image: linear-gradient($main-image-linear-gradient,
             $main-image-linear-gradient ),
-          url(../images/baner_background_desktop@2x.jpg);
+          url(../../images/baner_background_desktop@2x.jpg);
       }
     }
 
@@ -84,15 +86,14 @@
     (-webkit-min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
-      .main-top {
+      .main-baner {
         background-image: linear-gradient($main-image-linear-gradient,
             $main-image-linear-gradient ),
-          url(../images/baner_background_desktop@3x.jpg);
+          url(../../images/baner_background_desktop@3x.jpg);
       }
     }
   }
 }
-
 .main-baner__title {
   text-transform: uppercase;
   font-weight: 900;
