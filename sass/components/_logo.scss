@@ -1,13 +1,21 @@
 .logo {
   display: flex;
   text-decoration: none;
-  color: $blue;
+  color: $black;
   font-family: "Raleway";
   padding-top: 16px;
   padding-bottom: 16px;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
+  
+  &:hover,
+  &:focus{
+    color: $blue;
+  }
+  
+
+  
  
 
   @media screen and (min-width: $tablet) {
@@ -22,21 +30,27 @@
     line-height: 1.19;
   }
 
-  &--black {
-    color: $black;
-  }
-
+  &--blue {
+   color: $blue;
+  
+    }
+  
   &--white {
     color: $white;
   }
+   
 }
+
 
 .logo-footer {
   display: flex;
   text-decoration: none;
-  color: $blue;
+  color: $white;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
-}
+  &:hover,
+    &:focus {
+      color: $blue;
+}}
