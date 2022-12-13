@@ -111,12 +111,13 @@ flex-direction: column;
    transition: background-color $transition-duration $cubic-bezier,
      fill $transition-duration $cubic-bezier;
    will-change: background-color, fill;
-   cursor: pointer;
+   
 
    &:hover,
    &:focus {
      background-color: $blue;
      fill: $white;
+     cursor: pointer;
    }
  }
 
