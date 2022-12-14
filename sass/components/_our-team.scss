@@ -101,6 +101,7 @@ flex-direction: column;
 
  .our-team-card__social-link {
    display: flex;
+   cursor: pointer;
    width: 44px;
    height: 44px;
    background-color: $white;
@@ -108,7 +109,6 @@ flex-direction: column;
    align-items: center;
    justify-content: center;
    fill: $border-btn;
-   
    transition: background-color $transition-duration $cubic-bezier,
      fill $transition-duration $cubic-bezier;
    will-change: background-color, fill;
@@ -125,5 +125,5 @@ flex-direction: column;
  .our-team-card__social-icon {
    width: 20px;
    height: 20px;
-   cursor: pointer;
+   
  }
