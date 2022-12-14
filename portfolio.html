@@ -1,60 +1,71 @@
 <!doctype html>
 <html lang="pl">
-<!-- ========== HEAD========== -->
+
+<!-- ========== HEAD ========== -->
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css" />
-    <link rel="stylesheet" href="css/portfolio.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="css/main.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <title>Portfolio</title>
+        rel="stylesheet" />
+
+
 </head>
 
-<!-- ========== HEADER_PORTFOLIO ========== -->
-
 <body>
-    <header>
-        <div class="header">
+
+    <!-- ========== HEADER_PORTFOLIO ========= -->
+
+    <header class="header-underline">
+        <div class="header container">
             <div class="menu">
-                <a class="logo-black" href="./index.html">
-                    <span class="logo-blue">Web</span>Studio
+                <a class="logo" href="./index.html">
+                    <span class="logo--blue">Web</span>Studio
                 </a>
                 <nav class="navigation">
-                    <ul class="main-navigation">
+                    <ul class="main-navigation list">
                         <li>
-                            <a class="main-navigation__item" href="./index.html">Agencja </a>
+                            <a class="main-navigation__item link" href="./index.html">Agencja </a>
                         </li>
                         <li>
-                            <a class="main-navigation__item--active" href="./portfolio.html"> Portfolio </a>
+                            <a class="main-navigation__item--active active-page" href="./portfolio.html"> Portfolio </a>
                         </li>
                         <li>
-                            <a class="main-navigation__item" href="#"> Kontakt </a>
+                            <a class="main-navigation__item link" href="#"> Kontakt </a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="header-contact">
+                <ul class="header-contact list">
                     <li>
-                        <a class="header-contact__item" href="mailto:info@devstudio.com">
-                            <svg class="header-contact__icon" width="20" height="16">
+                        <a class="header-contact__item link-grey" href="mailto:info@devstudio.com">
+                            <svg class="header-contact__icon">
                                 <use href="./images/icons.svg#icon-envelope"></use>
                             </svg>
                             info@devstudio.com
                         </a>
                     </li>
                     <li>
-                        <a class="header-contact__item" href="tel:+48111111111">
-                            <svg class="header-contact__icon" width="16" height="20">
+                        <a class="header-contact__item link-grey" href="tel:+48111111111">
+                            <svg class="header-contact__icon--phone">
                                 <use href="./images/icons.svg#icon-phone"></use>
                             </svg>
                             +48 111 111 111</a>
                     </li>
                 </ul>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40" height="40">
+                        <use href="./images/icons.svg#icon-nav-mobile"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -65,7 +76,7 @@
     <div class="portfolio-main">
         <!-- =============== BUTTONS ================  -->
 
-        <ul class="portfolio-filters">
+        <ul class="portfolio-filters list">
             <li>
                 <button class="portfolio-filters__button" type="button">
                     Wszystkie
@@ -95,7 +106,7 @@
 
         <!-- =============== PRODUCTS ================  -->
 
-        <div class="portfolio-products">
+        <div class="portfolio-products container">
             <figure class="portfolio-product">
                 <div class="portfolio-product__image">
                     <img src="./images/img-post1.jpg" alt="Otwarta strona na ekranie laptopa" height="294" />
@@ -241,19 +252,20 @@
 <!-- ========== Footer ========= -->
 
 <footer class="footer">
-    <section class="footer-container">
+    <section class="footer-container container">
         <div class="footer-left-block">
-            <a class="logo-white" href="#"><span class="logo--blue">Web</span>Studio</a>
+            <a class="logo-footer" href="#"><span class="logo--blue">Web</span>Studio</a>
             <address class="footer-contact">
-                <ul class="footer-contact-list">
+                <ul class="footer-contact-list list">
                     <li class="footer-contact-list__address">
                         m. Warszawa, Aleje Jerozolimskie 21
                     </li>
                     <li>
-                        <a class="footer-contact-list__mail" href="mailto:info@example.com">info@example.com</a>
+                        <a class="footer-contact-list__mail link-grey"
+                            href="mailto:info@example.com">info@example.com</a>
                     </li>
                     <li>
-                        <a class="footer-contact-list__phone" href="tel:+48111111111">+48 111 111 111</a>
+                        <a class="footer-contact-list__phone link-grey" href="tel:+48111111111">+48 111 111 111</a>
                     </li>
                 </ul>
             </address>
@@ -263,7 +275,7 @@
 
         <div class="footer-socials">
             <h4 class="footer-socials__title">Dołącz do nas</h4>
-            <ul class="footer-social-list">
+            <ul class="footer-social-list list">
                 <li>
                     <a href="#" class="footer-social-list__link">
                         <svg class="footer-social-list__icon">
@@ -316,7 +328,59 @@
         </div>
     </section>
 </footer>
-<script src="./js/modal.js"></script>
-</body>
-
-</html>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    
+        <div class="mobile-menu">
+            <ul class="mobile-menu__list-nav">
+                <li class="mobile-menu__list-item">
+                    <a class="link" href="./index.html" class="link">Agencja</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a class="link" href="./portfolio.html" class="link">Portfolio</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a class="link" href="#" class="link">Kontakt</a>
+                </li>
+            </ul>
+    
+            <ul class="mobile-menu__list-contacts">
+                <li class="mobile-menu__list-contacts--phone">
+                    <a class="link-blue" href="tel:+48111111111">+48 111 111 111</a>
+                </li>
+                <li class="mobile-menu__list-contacts--mail">
+                    <a class="link-grey" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+    
+            <ul class="mobile-menu__list-socials list">
+                <li class="mobile-menu__list-socials-item">
+                    <a class="link-blue" href="#">Instagram</a>
+                </li>
+                <li class="mobile-menu__list-socials-item link-blue">
+                    <a class="link-blue" href="#">Twitter</a>
+                </li>
+                <li class="mobile-menu__list-socials-item link-blue">
+                    <a class="link-blue" href="#">Facebook</a>
+                </li>
+                <li class="mobile-menu__list-socials-item link-blue">
+                    <a class="link-blue" href="#">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    </body>
+    
+    </html>

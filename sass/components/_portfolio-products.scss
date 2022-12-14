@@ -1,8 +1,7 @@
 .portfolio-products {
-    @extend %container;
+
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -13,6 +12,8 @@
     flex-basis: 370px;
     transition: box-shadow $transition-duration $cubic-bezier;
     will-change: box-shadow;
+    max-width: 450px;
+    
 
     &__image {
         position: relative;
