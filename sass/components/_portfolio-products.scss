@@ -1,8 +1,10 @@
+.finder-products {
+    
+}
 .portfolio-products {
-
-    padding-left: 15px;
-    padding-right: 15px;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
 }
 
