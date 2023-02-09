@@ -15,7 +15,7 @@
       column-gap: 144px;
       align-items: flex-start;
     }
-         @media screen and(min-width:$desktop) {
+         @media screen and (min-width:$desktop) {
            flex-wrap: nowrap;
            justify-content: flex-start;
            gap: 0;
@@ -28,7 +28,7 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    @media screen and(min-width:$desktop) {
+    @media screen and (min-width:$desktop) {
       align-items: flex-start;
       margin-right: 70px;
       
