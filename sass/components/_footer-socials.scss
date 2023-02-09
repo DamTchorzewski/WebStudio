@@ -4,9 +4,9 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
-    @media screen and(min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       padding-top: 5px;}
-    @media screen and(min-width: $desktop){
+    @media screen and (min-width: $desktop){
       align-items: flex-start;
       margin-right: 78px;
     }
