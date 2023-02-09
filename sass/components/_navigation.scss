@@ -1,7 +1,7 @@
 .navigation {
     display: none;
 
-    @media screen and(min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       display: block;
       
     }
@@ -12,7 +12,7 @@
     list-style-type: none;
     display: flex;
     gap: 60px;
-    @media screen and(min-width: $desktop){
+    @media screen and (min-width: $desktop){
         gap: 50px;
           font-weight: 500;
           font-size: 14px;
@@ -32,14 +32,14 @@
   
   .header-contact {
     display: none;
-    @media screen and(min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       display: flex;
         flex-direction: column;
         gap: 10px;
         padding-block: 21px;
         font-weight: 500;
     }
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         display: flex;
           flex-direction: row;
           gap: 30px;
