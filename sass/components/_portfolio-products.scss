@@ -1,12 +1,23 @@
-.finder-products {
-    
-}
+
 .portfolio-products {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
+   
+    padding-top: 60px;
+  
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      padding-top: 94px;
+      margin-bottom: 0;
+      gap: 30px;
+    }
+  }
+  
+
 
 .portfolio-product {
     margin: 0;
