@@ -1,32 +1,36 @@
 
 .portfolio-products {
-   
     padding-top: 60px;
-  
-    @media screen and (min-width: $tablet) {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-  
-    @media screen and (min-width: $desktop) {
-      display: flex;
-      padding-top: 94px;
-      margin-bottom: 0;
-      gap: 30px;
-    }
-  }
-  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 
+    @media screen and (max-width: $mobile) {
+        gap: 30px;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        gap: 30px;
+    }
+}
 
 .portfolio-product {
     margin: 0;
     border-bottom: 1px solid $border-card;
-    flex-basis: 370px;
+    flex-basis: calc(33.33% - 30px);
     transition: box-shadow $transition-duration $cubic-bezier;
     will-change: box-shadow;
     max-width: 450px;
     
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc(50% - 30px);
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc(33.33% - 30px);
+    }
 
     &__image {
         position: relative;
