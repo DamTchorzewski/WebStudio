@@ -26,7 +26,7 @@ Filter buttons for different categories of projects.
 -Pictures:
 All images, both background and content, are responsive and support different pixel densities (x1, x2).
 
-##Acceptance Criteria:
+### Acceptance Criteria:
 The project meets the acceptance criteria, including the use of BEM, SASS, minimized style file, appropriate HTML tags, correct responsiveness and implemented mobile menus compliant with the guidelines.
 
 If you have any questions or need additional information, please contact me.
