@@ -35,9 +35,9 @@ Author: [Damian Tchorzewski]
 
 ## Screenshots
 
-<img width="100%" src="https://github.com/webstudio/webstudio/blob/main/images/Home.png">
+<img width="100%" src="https://github.com/damtchorzewski/webstudio/blob/main/images/Home.png">
 
-<img width="100%" src="https://github.com/webstudio/webstudio/blob/main/images/Portfolio.jpg">
+<img width="100%" src="https://github.com/damtchorzewski/webstudio/blob/main/images/Portfolio.jpg">
 
 
 
