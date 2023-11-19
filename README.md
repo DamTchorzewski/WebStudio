@@ -16,14 +16,14 @@ The mobile menu script contained in the mobile-menu. js file.
 Correct HTML markup for mobile menu.
 ## Portfolio Page (portfolio. html)
 - HTML structure:
--Semantic HTML5 was used.
+Semantic HTML5 was used.
 The main. min. css style file is minimized and located in the css folder.
--Responsiveness:
+- Responsiveness:
 Site adapted to different devices, although adaptive layout is not required.
--Portfolio:
+- Portfolio:
 Displays projects in the form of tabs with an image, name, and category.
 Filter buttons for different categories of projects.
--Pictures:
+- Pictures:
 All images, both background and content, are responsive and support different pixel densities (x1, x2).
 
 ## Acceptance Criteria:
