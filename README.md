@@ -32,3 +32,7 @@ The project meets the acceptance criteria, including the use of BEM, SASS, minim
 If you have any questions or need additional information, please contact me.
 
 Author: [Damian Tchorzewski]
+
+## Screenshots
+
+
