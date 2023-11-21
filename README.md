@@ -31,7 +31,7 @@ The project meets the acceptance criteria, including the use of BEM, SASS, minim
 
 If you have any questions or need additional information, please contact me.
 
-Author: [Damian Tchorzewski]
+
 
 ## Screenshots
 
@@ -40,5 +40,5 @@ Author: [Damian Tchorzewski]
 <img width="100%" src="https://github.com/damtchorzewski/webstudio/blob/main/images/Portfolio.jpg">
 
 
-
+Author: [Damian Tchorzewski]
 
